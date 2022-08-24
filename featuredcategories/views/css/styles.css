@@ -1,0 +1,151 @@
+.featured-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media (min-width: 992px) {
+  .featured-categories {
+    flex-wrap: nowrap;
+  }
+}
+.featured-categories .featured-category {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+  border-radius: 8px;
+  background: #f6f6f6;
+  background: linear-gradient(90deg, #f6f6f6 0%, #e6e6e6 100%);
+  -webkit-box-shadow: 0px 0px 5px -3px #42445a;
+  -moz-box-shadow: 0px 0px 5px -3px #42445a;
+  box-shadow: 0px 0px 5px -3px #42445a;
+}
+.featured-categories .featured-category .featured-category--title {
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+.featured-categories .featured-category .featured-category--title:after {
+  height: 2px;
+  width: 50px;
+  background: #e02532;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.featured-categories .featured-category .featured-category--swipe-icons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.featured-categories .featured-category .featured-category--swipe-icons span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.featured-categories .featured-category .featured-category--swipe-icons span:after {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  content: "\276F";
+  font-weight: 400;
+  line-height: 1em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg) translate(-50%, -50%);
+  transition: all 0.05s;
+}
+.featured-categories .featured-category .featured-category--swipe-icons span.swipe-up:after {
+  content: "\276E";
+}
+.featured-categories .featured-category .products {
+  margin-top: 30px;
+}
+.featured-categories .featured-category .product {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 25px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px -3px #42445a;
+  -moz-box-shadow: 0px 0px 5px -3px #42445a;
+  box-shadow: 0px 0px 5px -3px #42445a;
+  align-items: flex-start;
+}
+.featured-categories .featured-category .product .product__image {
+  max-width: 75px;
+}
+.featured-categories .featured-category .product .product__image img {
+  max-width: 100%;
+  height: auto;
+}
+.featured-categories .featured-category .product .product__name a {
+  color: #b2b2b2;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+.featured-categories .featured-category .product .product__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+}
+.featured-categories .featured-category .product .product__action .product__price {
+  color: #168927;
+  font-weight: 600;
+  font-size: 14px;
+}
+.featured-categories .featured-category .product .product__action .product-quantity .qty input {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #767676;
+}
+.featured-categories .featured-category .product .product__action .product-quantity .add .add-to-cart {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  background: #168927;
+}
+.featured-categories .featured-category .product .product__action .product-quantity .add .add-to-cart:hover {
+  opacity: 0.8;
+}
+.featured-categories .featured-category .product .product__action .product-quantity .add .add-to-cart i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 18px;
+}
+.featured-categories .featured-category .link-to-category {
+  color: #168927;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 16px;
+  border: 2px solid #168927;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.featured-categories .featured-category .link-to-category:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=styles.css.map */
